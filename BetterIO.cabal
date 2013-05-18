@@ -1,0 +1,20 @@
+Name: BetterIO
+Version: 0.5.15
+Description: More extensible IO library for haskell
+License: GPL
+License-file: LICENSE
+Author: Josh Rahm
+Maintainer: joshua.rahm@colorado.edu
+Build-Type: Simple
+Cabal-Version: >= 1.8
+
+Library
+    exposed-modules:
+        Data.BetterIO.InStream,
+        Data.BetterIO.OutStream,
+        Data.BetterIO.PipedStream
+    Hs-Source-Dirs: src
+    extensions:    DoAndIfThenElse
+    Build-Depends: base >= 3,
+        bytestring >= 0.10,
+        stm >= 2.0
